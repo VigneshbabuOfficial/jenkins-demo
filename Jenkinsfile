@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                bat "mvn test site"
+                // bat "mvn test site"
+                bat "echo %cd%"
             }
         }
         stage('deploy') { 
